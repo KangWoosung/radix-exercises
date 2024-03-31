@@ -4,7 +4,7 @@ Very nice example of abstraction of modals.
 
 
 Usage:
-1. Trigger a modal with a button:
+1. Place a modal-trigger code set:
 
     /*** [open, setOpen] makes the modal rerender so that the form is reset after saving
     <Modal open={open} onOpenChange={setOpen}>
@@ -19,7 +19,7 @@ Usage:
     </Modal>
 
 2. Show a modal with default layout and children:
-    function ModalContent() will be the contents of this modal:
+    /*** function ModalContent() will be the contents of this modal:
     <Dialog.Portal>
       <Dialog.Overlay />
       <Dialog.Content >
@@ -34,7 +34,7 @@ Usage:
     </Dialog.Portal>
 
 3. So, all you need to care about is;
-    a. place the modal-trigger set code. 
+    a. place the modal-trigger set of code. 
     b. Modal will be managed by its own abstracted way.
 
 4. Besides, css animation code is needed.
@@ -45,6 +45,7 @@ Usage:
 import * as Dialog from "@radix-ui/react-dialog";
 import { Cross1Icon } from "@radix-ui/react-icons";
 import { ReactNode } from "react";
+import "./modal.css";
 
 export default function Modal({
   open,
