@@ -1,9 +1,7 @@
-function App() {
-  return (
-    <>
-      <h1>Radix Exercises</h1>
-    </>
-  );
-}
+"use client";
 
-export default App;
+import ModalsExercise from "./lessons/ModalsExercise";
+
+export default function App() {
+  return <ModalsExercise />;
+}
